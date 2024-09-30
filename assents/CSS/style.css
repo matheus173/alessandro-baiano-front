@@ -180,12 +180,12 @@ img {
 .div-right {
     flex: 1;
     background-color: white;
-    color: white;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: row;
+    height: 100%;
+    position: relative;
 }
 
 .box {
@@ -197,12 +197,21 @@ img {
 .login-box .box .tittle-login {
 
     color: black;
+    text-align: center;
 }
 
 .login-box .box .enter p {
 
     color: black;
 }
+
+
+.login-box .box .enter {
+
+    margin-top: 20px;
+
+}
+
 
 .login-box .box .enter a {
 
@@ -220,6 +229,7 @@ img {
     padding-left: 15px;
     color: #49be8f;
     transition: border 0.3s;
+    margin-top: 50px;
 
 }
 
@@ -271,6 +281,7 @@ img {
     border-radius: 5px; 
     cursor: not-allowed; 
     transition: background-color 0.3s; 
+    margin-top: 15px;
 }
 
 
@@ -286,4 +297,10 @@ img {
 
 
 
+.div-right .box--realease .release {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
