@@ -188,6 +188,11 @@ img {
     flex-direction: row;
 }
 
+.box {
+
+    margin-bottom: 150px
+}
+
 
 .login-box .box .tittle-login {
 
@@ -210,7 +215,7 @@ img {
 
     border-radius: 5px;
     border: 1px solid gray;
-    width: 350px;
+    width: 330px;
     height: 45px;
     padding-left: 15px;
     color: #49be8f;
@@ -231,7 +236,7 @@ img {
 
     border-radius: 5px;
     border: 1px solid gray;
-    width: 350px;
+    width: 330px;
     height: 45px;
     padding-left: 15px;
     color: green;
@@ -259,7 +264,7 @@ img {
 
 
 #submit-btn {
-    background-color: gray; 
+    background-color: #c9ccce; 
     color: white; 
     border: none; 
     padding: 10px 20px; 
