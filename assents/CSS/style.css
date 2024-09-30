@@ -18,6 +18,9 @@
 }
 
 
+/* LADO ESQUERDO*/
+
+
 .div-left {
     flex: 2;
     background-color: #f1f1f1;
@@ -109,7 +112,7 @@ img {
 }
 
 
-.div--text .div--h1 {
+.slider-container .div--h1 {
 
     color: #4ebe8f;
     align-items: center;
@@ -119,29 +122,163 @@ img {
 }
 
 
-.div--text .div--p {
+.slider-container .text--1 {
 
     max-width: 700px;
     color: black;
-    opacity: 0.6;
-    width: 600;
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 18px;
 }
 
-.div--h1 {
 
+.slider-container .div--h2 {
+
+    color: #4ebe8f;
+    margin-top: 1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.slider-container .text--2 {
+
+    max-width: 700px;
     color: black;
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.slider-container .img--3 {
+
+    width: 700px;
 }
 
 
+.slider-container .div--h3 {
 
+    color: #4ebe8f;
+    margin-top: 1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.slider-container .text--3 {
+
+    max-width: 700px;
+    color: black;
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+/*LADO DIREITO*/
 
 .div-right {
     flex: 1;
     background-color: white;
     color: white;
-    display: flex;
-    flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    display: flex;
+    flex-direction: row;
 }
+
+
+.login-box .box .tittle-login {
+
+    color: black;
+}
+
+.login-box .box .enter p {
+
+    color: black;
+}
+
+.login-box .box .enter a {
+
+    text-decoration: none;
+    color:#49be8f;
+}
+
+
+.login-box .box .user input {
+
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 350px;
+    height: 45px;
+    padding-left: 15px;
+    color: #49be8f;
+    transition: border 0.3s;
+
+}
+
+
+.login-box .box .user input:focus {
+
+    border: 2px solid #4CAF50; 
+    outline: none;
+
+}
+
+
+.login-box .box .password input {
+
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 350px;
+    height: 45px;
+    padding-left: 15px;
+    color: green;
+    margin-top: 15px;
+    transition: border 0.3s;
+
+}
+
+.login-box .box .password input:focus {
+
+    border: 2px solid #4CAF50; 
+    outline: none;
+
+}
+
+
+.login-box .box .enter input {
+
+    cursor: pointer;
+    width: 350px;
+    height: 45px;
+    border-radius: 15px;
+    color: black;
+}
+
+
+#submit-btn {
+    background-color: gray; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: not-allowed; 
+    transition: background-color 0.3s; 
+}
+
+
+#submit-btn:enabled {
+    background-color: green; 
+    cursor: pointer; 
+}
+
+
+#submit-btn:hover:enabled {
+    background-color: darkgreen; 
+}
+
+
+
+
