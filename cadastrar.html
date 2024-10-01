@@ -26,22 +26,25 @@
                     </div>
 
                     <div class="box--text">
-                        <p>Para se manter conectado com a gente faça o seu login com suas informações pessoais</p>
+                        <p>Para se manter conectado com a gente faça o seu login com suas informações</p>
                     </div>
 
-                    <div class="box--btn">
-                        <button type="submit" id="submit-btn">Entrar</button>
-                    </div>
+                    <form action="/login" method="POST">
+
+                        <div class="box--btn">
+                            <button type="submit" id="submit-btn">Login</button>
+                        </div>
+
+                    </form>
                 </div>
 
 
                 <div class="box-right">
-
+                    
                     <div class="box--tittle-2">
-
-                        <h2>Cria sua conta</h2>
-
+                        <h2>Crie sua conta</h2>
                     </div>
+
                     <div class="box--icon">
                         <i class="bi bi-facebook"></i>
                         <i class="bi bi-google"></i>
@@ -54,12 +57,28 @@
 
                     <form action="/cadastrar" method="POST">
                         <div class="form-group">
-                            <input type="text" id="username" name="username" required>
+                            <label class="label--input for=">
+                                <i class="bi bi-person"></i>
+                                <input type="text" id="username" name="username" placeholder="Usuário" required>
+                            </label>
+                            
                         </div>
                         <div class="form-group">
-                            <input type="password" id="password" name="password" required>
+                            <label class="label--input" for="">
+                                <i class="bi bi-lock-fill"></i>
+                                <input type="password" id="password" name="password" placeholder="senha" required>
+                            </label>
                         </div>
-                        <button type="submit">Cadastrar</button>
+
+                        <div class="form-group">
+                            <label class="label--input">
+                                <i class="bi bi-lock-fill"></i>
+                                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
+                            </label>
+                        </div>
+
+
+                        <button type="submit" class="submit-btn">Cadastrar</button>
                     </form>
 
                 </div>
