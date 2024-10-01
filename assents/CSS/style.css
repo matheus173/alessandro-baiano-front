@@ -96,7 +96,7 @@ img {
 }
 
 .active, .dot:hover {
-    background-color: #717171;
+    background-color: #49be8f;
 }
 
 .fade {
@@ -227,7 +227,7 @@ img {
     width: 330px;
     height: 45px;
     padding-left: 15px;
-    color: #49be8f;
+    color: black;
     transition: border 0.3s;
     margin-top: 50px;
 
@@ -249,7 +249,7 @@ img {
     width: 330px;
     height: 45px;
     padding-left: 15px;
-    color: green;
+    color: black;
     margin-top: 15px;
     transition: border 0.3s;
 
@@ -286,13 +286,13 @@ img {
 
 
 #submit-btn:enabled {
-    background-color: green; 
+    background-color: #49be8f; 
     cursor: pointer; 
 }
 
 
 #submit-btn:hover:enabled {
-    background-color: darkgreen; 
+    background-color: #39ac7d; 
 }
 
 
