@@ -1,26 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins' , sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-
-.global {
-
+/* Atualizado de .global para .container */
+.container {
     display: flex;
     justify-content: center;    
     align-items: center;
     width: 100%;
     height: 100vh; 
-
 }
 
-
-/* LADO ESQUERDO*/
-
-
+/* LADO ESQUERDO */
 .div-left {
     flex: 2;
     background-color: #f1f1f1;
@@ -31,8 +26,6 @@
     height: 100%;
     position: relative;
 }
-
-
 
 .div-left .div--logo {
     display: flex;
@@ -48,7 +41,6 @@
     max-width: 100px;
 }
 
-
 .slider-container {
     max-width: 800px;
     position: relative;
@@ -56,27 +48,19 @@
     text-align: center;
 }
 
-.slide {
-    display: none;
-}
-
 img {
     width: 100%;
     border-radius: 8px;
 }
 
-
 .slider-container .img--2 {
-
     width: 500px;
 }
 
-
- .slider-container .div--h1 {
+.slider-container .div--h1 {
     color: #49be8f;
     margin-bottom: 25px;
 }
-
 
 .dots-container {
     text-align: center;
@@ -104,69 +88,21 @@ img {
     animation-duration: 1.5s;
 }
 
-
-
 @keyframes fade {
-    from {opacity: 0.4} 
-    to {opacity: 1}
+    from { opacity: 0.4 } 
+    to { opacity: 1 }
 }
 
-
-.slider-container .div--h1 {
-
-    color: #4ebe8f;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 30px;
-
-}
-
-
-.slider-container .text--1 {
-
-    max-width: 700px;
-    color: black;
-    opacity: 0.7;
-    font-weight: 400;
-    font-size: 18px;
-}
-
-
-.slider-container .div--h2 {
-
-    color: #4ebe8f;
-    margin-top: 1;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-
-.slider-container .text--2 {
-
-    max-width: 700px;
-    color: black;
-    opacity: 0.7;
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.slider-container .img--3 {
-
-    width: 700px;
-}
-
-
+.slider-container .div--h2,
 .slider-container .div--h3 {
-
-    color: #4ebe8f;
-    margin-top: 1;
+    color: #49be8f;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-
+.slider-container .text--1,
+.slider-container .text--2,
 .slider-container .text--3 {
-
     max-width: 700px;
     color: black;
     opacity: 0.7;
@@ -174,9 +110,7 @@ img {
     font-size: 18px;
 }
 
-
-/*LADO DIREITO*/
-
+/* LADO DIREITO */
 .div-right {
     flex: 1;
     background-color: white;
@@ -189,39 +123,29 @@ img {
 }
 
 .box {
-
-    margin-bottom: 150px
+    margin-bottom: 150px;
 }
 
-
 .login-box .box .tittle-login {
-
     color: black;
     text-align: center;
 }
 
 .login-box .box .enter p {
-
     color: black;
 }
-
 
 .login-box .box .enter {
-
     margin-top: 20px;
-
 }
-
 
 .login-box .box .enter a {
-
     text-decoration: none;
-    color:#49be8f;
+    color: #49be8f;
 }
 
-
-.login-box .box .user input {
-
+/* Atualizado de .user e .password para .form-group */
+.login-box .box .form-group input {
     border-radius: 5px;
     border: 1px solid gray;
     width: 330px;
@@ -229,49 +153,21 @@ img {
     padding-left: 15px;
     color: black;
     transition: border 0.3s;
-    margin-top: 50px;
-
-}
-
-
-.login-box .box .user input:focus {
-
-    border: 2px solid #4CAF50; 
-    outline: none;
-
-}
-
-
-.login-box .box .password input {
-
-    border-radius: 5px;
-    border: 1px solid gray;
-    width: 330px;
-    height: 45px;
-    padding-left: 15px;
-    color: black;
     margin-top: 15px;
-    transition: border 0.3s;
-
 }
 
-.login-box .box .password input:focus {
-
+.login-box .box .form-group input:focus {
     border: 2px solid #4CAF50; 
     outline: none;
-
 }
-
 
 .login-box .box .enter input {
-
     cursor: pointer;
     width: 330px;
     height: 45px;
     border-radius: 15px;
     color: black;
 }
-
 
 #submit-btn {
     background-color: #c9ccce; 
@@ -284,23 +180,17 @@ img {
     margin-top: 15px;
 }
 
-
 #submit-btn:enabled {
     background-color: #49be8f; 
     cursor: pointer; 
 }
 
-
 #submit-btn:hover:enabled {
     background-color: #39ac7d; 
 }
 
-
-
 .div-right .box--realease .release {
-
     display: flex;
     flex-direction: column;
     justify-content: end;
-
 }
