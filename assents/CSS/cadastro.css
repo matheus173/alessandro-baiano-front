@@ -58,8 +58,9 @@ body {
     max-width: 350px;
     align-items: center;
     text-align: center;
-    color: white;
-    font-weight: 180;
+    color: rgba(255, 255, 255, 0.616);
+    font-size: 14px;
+
 }
 
 
@@ -74,6 +75,15 @@ body {
     font-weight: 500;
     margin-top: 20px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.box .box-left .box--btn #submit-btn:hover {
+
+    background-color: white;
+    color: #2fa49c;
+    transition: 0.3s;
 }
 
 /* CAIXA DA DIREITA*/
@@ -174,5 +184,18 @@ form {
     width: 150px;
     height: 35px;
     justify-content: center;
-    
+    color: #2fa49c ;
+    border: 1px solid #2fa49c;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+.box-right .submit-btn:hover {
+
+    background-color: #2fa49c;
+    color: white;
 }

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +6,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Container Principal */
+/* Atualizado de .global para .container */
 .container {
     display: flex;
     justify-content: center;    
-    align-items: stretch; /* Mudei de center para stretch */
+    align-items: center;
     width: 100%;
     height: 100vh; 
 }
@@ -24,6 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
     position: relative;
 }
 
@@ -118,9 +118,8 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
     position: relative;
-    padding: 20px; /* Adicionei um padding para melhor espaçamento */
-    height: 100%; /* Certifica que ocupa toda a altura disponível */
 }
 
 .box {
@@ -145,7 +144,7 @@ img {
     color: #49be8f;
 }
 
-/* Formulário */
+/* Atualizado de .user e .password para .form-group */
 .login-box .box .form-group input {
     border-radius: 5px;
     border: 1px solid gray;
@@ -194,136 +193,4 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: end;
-}
-
-/* Media Queries para Responsividade */
-
-@media (min-width: 1920px) {
-    .container {
-        flex-direction: row;
-    }
-
-    .div-left, .div-right {
-        height: 100vh;
-    }
-
-    .slider-container {
-        max-width: 800px;
-    }
-}
-
-@media (min-width: 1366px) and (max-width: 1920px) {
-    .container {
-        flex-direction: row;
-    }
-
-    .div-left, .div-right {
-        height: 100vh;
-    }
-
-    .slider-container {
-        max-width: 700px;
-    }
-}
-
-@media (min-width: 1280px) and (max-width: 1366px) {
-    .container {
-        flex-direction: row;
-    }
-
-    .div-left, .div-right {
-        height: auto;
-    }
-
-    .slider-container {
-        max-width: 600px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .div-left, .div-right {
-        width: 100%;
-        height: auto;
-    }
-
-    .slider-container {
-        max-width: 90%;
-    }
-
-    .login-box .box .form-group input {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    #submit-btn {
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .div-left, .div-right {
-        width: 100%;
-        height: auto;
-    }
-
-    .slider-container {
-        max-width: 100%;
-    }
-
-    .login-box .box .form-group input {
-        width: 90%;
-        margin: 0 auto; 
-    }
-
-    #submit-btn {
-        width: 90%;
-    }
-}
-
-/* Media Query específica para 1366x768 */
-@media (max-width: 1366px) and (min-width: 1280px) {
-    .slider-container {
-        max-width: 600px;
-    }
-
-    .div-left .div--logo {
-        top: 30px; /* Ajusta a posição do logo */
-        left: 90px; /* Ajusta a posição do logo */
-    }
-
-    .login-box .box .form-group input {
-        width: 80%; /* Ajusta a largura dos inputs */
-    }
-
-    #submit-btn {
-        width: 80%; /* Ajusta a largura do botão */
-    }
-}
-
-/* Media Query específica para 1280x720 */
-@media (max-width: 1280px) {
-    .slider-container {
-        max-width: 100%; /* Adapta o slider */
-    }
-
-    .div-left .div--logo {
-        top: 20px; /* Ajusta a posição do logo */
-        left: 60px; /* Ajusta a posição do logo */
-    }
-
-    .login-box .box .form-group input {
-        width: 90%; /* Ajusta a largura dos inputs */
-    }
-
-    #submit-btn {
-        width: 90%; /* Ajusta a largura do botão */
-    }
 }
