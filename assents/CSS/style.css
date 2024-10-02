@@ -106,17 +106,22 @@
 
 /* LADO DIREITO */
 .div-right {
-    flex: 1;
+    flex: 1 ;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
+    position: relative;      
 }
 
-.box {
-    margin-bottom: 150px;
+.div-right .login-box {
+    display: flex;
+   height: 100%;
+   align-items: center;
+   justify-content: center;
+
 }
 
 .login-box .box .tittle-login {
@@ -182,17 +187,16 @@
     background-color: #39ac7d; 
 }
 
-.div-right .box--realease .release {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
 
+.div-right .release {
+
+    height: 10%;
+
+}
 
 .div-right .copyright {
-    display: flex;
+
     font-size: 12px;
-    align-items: end;
-    justify-content: end;
-    margin-top: 150px;
 }
+
+
