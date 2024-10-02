@@ -131,10 +131,13 @@
 
 .login-box .box .enter p {
     color: black;
+    margin-top: 15px;
 }
 
 .login-box .box .enter {
-    margin-top: 20px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
 }
 
 .login-box .box .enter a {
@@ -173,7 +176,6 @@
     border-radius: 5px; 
     cursor: not-allowed; 
     transition: background-color 0.3s; 
-    margin-top: 15px;
     width: 330px;
     height: 45px;
 }
@@ -191,7 +193,7 @@
 .div-right .release {
 
     height: 10%;
-
+    font-size: 13px;
 }
 
 .div-right .copyright {
