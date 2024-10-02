@@ -27,20 +27,6 @@
     position: relative;
 }
 
-.div-left .div--logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    position: absolute; 
-    top: 40px; 
-    left: 120px; 
-}
-
-.div-left .div--logo img {
-    max-width: 100px;
-}
-
 .slider-container {
     max-width: 800px;
     position: relative;
@@ -48,14 +34,22 @@
     text-align: center;
 }
 
-img {
-    width: 100%;
-    border-radius: 8px;
+.slider-container .img--1 {
+
+    width: 700px;
 }
+
+.slider-container .img--3 {
+
+    width: 500px;
+}
+
 
 .slider-container .img--2 {
     width: 500px;
 }
+
+
 
 .slider-container .div--h1 {
     color: #49be8f;
@@ -96,8 +90,8 @@ img {
 .slider-container .div--h2,
 .slider-container .div--h3 {
     color: #49be8f;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .slider-container .text--1,
@@ -106,8 +100,8 @@ img {
     max-width: 700px;
     color: black;
     opacity: 0.7;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 400;   
+    font-size: 14px;
 }
 
 /* LADO DIREITO */
@@ -119,7 +113,6 @@ img {
     justify-content: center;
     align-items: center;
     height: 100%;
-    position: relative;
 }
 
 .box {
@@ -193,4 +186,13 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: end;
+}
+
+
+.div-right .copyright {
+    display: flex;
+    font-size: 12px;
+    align-items: end;
+    justify-content: end;
+    margin-top: 150px;
 }
