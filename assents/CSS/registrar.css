@@ -30,9 +30,10 @@ body {
 
 .box {
     height: 70%;
-    width: 60%;
+    width: 1300px;
     display: flex;
     border: 2px solid red;
+    background-image: linear-gradient(to right, #064e3b, #20a074, #34d399);
 }
 
 /* BOX LEFT */
@@ -40,24 +41,28 @@ body {
 
 .box-left {
     display: flex;
-    flex: 1;
-
-    align-items: center;
     justify-content: center;
-    background-color: #2fa49c;
+    flex-direction: column;
+    border: 1px solid yellow;
+    width: 350px;   
 }
-
-
-.box-left .left--img {
-    display: flex;
-    align-items: start;
-        
-}
-
 
 .box-left .left--img img {
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    top: -150px;
+    align-items: center;
 
+}
+
+
+.box-left .left--tittle {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -69,28 +74,25 @@ body {
 .box-right {
 
     display: flex;
-    flex: 1.5;
     flex-direction: column;
     justify-content: center;
+    border: 1px solid blue;
+    width: 1000px;
+}
+
+
+.box-right .div--right {
+
+    border: 1px solid red;
+    height: 90%;
+    background-color: white;
 }
 
 
 .box-right .box--register {
-    position: relative;
     bottom: 70px;
     color: #2fa49c;
     font-size: 25px;
     text-align: center;
 
-}
-
-
-.box-right .first--column {
-    border: 1px solid red;
-    width: 100%;
-}
-
-
-.box-right .first--column .coder input {
-    max-width: 50px;
 }

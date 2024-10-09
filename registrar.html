@@ -18,60 +18,66 @@
                     <div class="left--img">
                         <img src="/assents/images/foto_left.svg" alt="">
                     </div>
+
+                    <div class="left--tittle">
+                        <h2>Welcome</h2>
+                    </div>
                 </div>
 
                 <div class="box-right">
-                    <div class="box--register">
-                        <h1>Cadastre seu atendimento</h1>
-                    </div>
-
-                    <form action="/registrar">
-                        <div class="first--column">
-                            <div class="coder">
-                                <label class="label--coder">Código</label>
-                                <input type="text" id="coder" name="coder"
-                                    required>
-                            </div>
-
-                            <div class="contact">
-                                <label class="label--contact">Contato</label>
-                                <input type="text" id="contact" name="contact" placeholder="Digite o nome do cliente"
-                                    required>
-                            </div>
-
-                            <div class="date">
-                                <label for="data">Data</label>
-                                <input type="date" id="data" name="data" required>
-                            </div>
+                    <div class="div--right">
+                        <div class="box--register">
+                            <h2>Cadastre seu atendimento</h2>
                         </div>
-
-                        <div class="second--column">
-                            <div class="protocol">
-                                <label for="label--protocol">Protocolo</label>
-                                <input type="text" id="protocol" name="protocol" placeholder="digite o protocolo">
-                            </div>
-
-                            <div class="service">
-                                <label for="atendimento">Atendimento:</label>
-                                <div class="input-container">
-                                    <textarea id="atendimento" name="atendimento" placeholder="Digite ou fale algo..."
-                                        required rows="4"></textarea>
-                                    <button id="micButton" title="Clique para falar"
-                                        class="mic-button microphone-icon">🎤</button>
+    
+                        <form action="/registrar">
+                            <div class="first--column">
+                                <div class="coder">
+                                    <label class="label--coder">Código</label>
+                                    <input type="text" id="coder" name="coder"
+                                        required>
+                                </div>
+    
+                                <div class="contact">
+                                    <label class="label--contact">Contato</label>
+                                    <input type="text" id="contact" name="contact" placeholder="Digite o nome do cliente"
+                                        required>
+                                </div>
+    
+                                <div class="date">
+                                    <label for="data">Data</label>
+                                    <input type="date" id="data" name="data" required>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="third--column">
-                            <div class="time">
-                                <label for="tempo_atendimento">Tempo(Formato HH:MM:SS):</label>
-                                <input type="text" id="tempo_atendimento" name="tempo_atendimento" maxlength="8"
-                                    placeholder="HH:MM:SS" required>
+    
+                            <div class="second--column">
+                                <div class="protocol">
+                                    <label for="label--protocol">Protocolo</label>
+                                    <input type="text" id="protocol" name="protocol" placeholder="digite o protocolo">
+                                </div>
+    
+                                <div class="service">
+                                    <label for="atendimento">Atendimento:</label>
+                                    <div class="input-container">
+                                        <textarea id="atendimento" name="atendimento" placeholder="Digite ou fale algo..."
+                                            required rows="4"></textarea>
+                                        <button id="micButton" title="Clique para falar"
+                                            class="mic-button microphone-icon">🎤</button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <button type="submit" class="submit-btn">Cadastrar</button>
-                    </form>
+    
+                            <div class="third--column">
+                                <div class="time">
+                                    <label for="tempo_atendimento">Tempo(Formato HH:MM:SS):</label>
+                                    <input type="text" id="tempo_atendimento" name="tempo_atendimento" maxlength="8"
+                                        placeholder="HH:MM:SS" required>
+                                </div>
+                            </div>
+    
+                            <button type="submit" class="submit-btn">Cadastrar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
