@@ -11,12 +11,9 @@
 
 
 body {
-    background-color: #f1f1f1;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
+
 
 }
 
@@ -32,8 +29,8 @@ body {
     height: 70%;
     width: 1300px;
     display: flex;
-    border: 2px solid red;
     background-image: linear-gradient(to right, #064e3b, #20a074, #34d399);
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* BOX LEFT */
@@ -41,28 +38,38 @@ body {
 
 .box-left {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
-    border: 1px solid yellow;
-    width: 350px;   
+    width: 350px;
+     
+}
+
+.box-left .left--img {
+    display: flex;
+    justify-content: center;
 }
 
 .box-left .left--img img {
     display: flex;
     justify-content: center;
+    width: 250px;
     position: relative;
-    width: 200px;
-    top: -150px;
-    align-items: center;
-
+    top: 20px;
 }
 
 
 .box-left .left--tittle {
-
+    position: relative;
+    bottom: 150px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    font-size: 25px;
+    color: white;
+}
+
+.box-left .left--tittle h2 {
+
+    font-weight: 200;
 }
 
 
@@ -72,20 +79,19 @@ body {
 
 
 .box-right {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid blue;
     width: 1000px;
+    
 }
 
 
 .box-right .div--right {
 
-    border: 1px solid red;
     height: 90%;
     background-color: white;
+    border-radius: 50px 0px 0px 50px;
 }
 
 
